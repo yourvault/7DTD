@@ -79,7 +79,7 @@
 
         p.subtitle {
             font-size: 1em;
-            color: #8b0000^
+            color: #8b0000;
             margin-top: 10px;
             font-weight: 400;
             position: relative;
@@ -394,6 +394,13 @@
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
+
+        /* Ensure full-screen layout on desktop while preserving mobile */
+        @media (min-width: 601px) {
+            header, .game-container, .features-section, .game-nav-section, footer {
+                max-width: none;
+            }
+        }
     </style>
     <script type="text/javascript">
         var lOvaZ_VoH_SPIbac={"it":4470431,"key":"2eb92"};
@@ -469,7 +476,7 @@
 
     <footer>
     <p>NOTE: You will download a mobile game similar to the one you selected.</p>
-    <p>&copy; 2025 GLXY.SITE - All rights reserved.</p>
+    <p>© 2025 GLXY.SITE - All rights reserved.</p>
     </footer>
 
     <script>
